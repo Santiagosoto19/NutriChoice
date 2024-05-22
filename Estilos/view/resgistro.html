@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Información Personal</title>
+    <link rel="stylesheet" href="../register.css">
+</head>
+<body>
+    
+    <div class="navbar">
+        <div class="navbar_container">
+            <h4>NutriChoice</h4>
+            <div class="navbar_items">
+                <a href="../../Index.html">Inicio</a>
+                <a href="../view/dietas.html">Dietas</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <div class="navbar_buttons">
+                <button class="button" onclick="location.href='registro.html'" type="button">
+                  Regístrate
+                </button>
+                <button class="button" onclick="location.href='login.html'" type="button">
+                  Iniciar Sesión
+                </button>
+            </div>
+        </div>
+    </div>
+    <form>
+        <div class="form-container">
+            <div class="form-column">
+                <h1>Información Personal</h1>
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Número de Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono">
+                </div>
+                <div class="form-group">
+                    <label for="contrasena">Contraseña:</label>
+                    <input type="password" id="contrasena" name="contrasena" required>
+                </div>
+            </div>
+            <div class="form-column">
+                <h1>Preferencias y Restricciones Dietéticas</h1>
+                <div class="form-group">
+                    <label for="dieta">Tipo de Dieta Requerida:</label>
+                    <select id="dieta" name="dieta" required>
+                        <option value="sinGluten">Sin Gluten</option>
+                        <option value="bajaCarbo">Baja en Carbohidratos</option>
+                        <!-- Añade más opciones según sea necesario -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="restricciones">Restricciones Alimentarias:</label>
+                    <input type="text" id="restricciones" name="restricciones">
+                </div>
+                <div class="form-group">
+                    <label for="evitar">Alimentos a Evitar:</label>
+                    <input type="text" id="evitar" name="evitar">
+                </div>
+            </div>
+        </div>
+        <div class="form-submit">
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+</body>
+</html>

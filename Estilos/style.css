@@ -1,0 +1,191 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.navbar {
+    background-color: #1e90ff;
+    padding: 10px 20px;
+}
+
+.navbar_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar_items {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.navbar_items a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar_items a:hover {
+    color: #87ceeb;
+}
+
+.navbar h4 {
+    font-size: 24px; /* Ajusta el tamaño del texto */
+    font-weight: bold; /* Hace el texto más grueso */
+    color: white; /* Cambia el color del texto */
+    font-family: 'Arial', sans-serif; /* Cambia el estilo de la fuente */
+    padding: 10px; /* Añade espacio alrededor del texto */
+    margin: 0; /* Elimina el margen por defecto */
+    border-bottom: 2px solid #ccc; /* Añade un borde inferior */
+    background-color: #add8e6; /* Añade un fondo */
+    border-radius: 5px; /* Añade bordes redondeados */
+}
+
+.navbar_buttons {
+    display: flex;
+}
+
+.button {
+    background-color: white;
+    border: 2px solid #1e90ff;
+    color: #1e90ff;
+    padding: 8px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #1e90ff;
+    color: white;
+}
+
+.mission-vision {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.mission, .vision {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.mission h2, .vision h2 {
+    color: #1e90ff;
+    font-family: 'Arial Black', sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.mission_info, .vision_info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.mission_info img, .vision_info img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.mission_info p, .vision_info p {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+
+.intro, .services, .mission-vision, .team, .creators, .terms-conditions {
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: #1e90ff;
+    font-family: 'Arial Black', sans-serif;
+}
+
+.intro p, .services p, .mission-vision p, .team p, .creators p, .terms-conditions p {
+    color: #555;
+    font-size: 1em;
+    line-height: 1.6em;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+footer {
+    background-color: #1e90ff;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .navbar_items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar_items a {
+        margin: 10px 0;
+    }
+
+    .navbar_buttons {
+        margin-top: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}

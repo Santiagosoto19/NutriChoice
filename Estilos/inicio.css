@@ -1,0 +1,140 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+header {
+    background-color: #1e90ff;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+.navbar h4 {
+    font-size: 24px; /* Ajusta el tamaño del texto */
+    font-weight: bold; /* Hace el texto más grueso */
+    color: white; /* Cambia el color del texto */
+    font-family: 'Arial', sans-serif; /* Cambia el estilo de la fuente */
+    padding: 10px; /* Añade espacio alrededor del texto */
+    margin: 0; /* Elimina el margen por defecto */
+    border-bottom: 2px solid #ccc; /* Añade un borde inferior */
+    background-color: #add8e6; /* Añade un fondo */
+    border-radius: 5px; /* Añade bordes redondeados */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+main {
+    flex: 3;
+    padding: 2em;
+}
+
+main section {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 1em 0;
+    padding: 1em 2em;
+}
+
+main h2 {
+    color: #1e90ff;
+}
+
+.diet-plan ul, .recommendations ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.diet-plan li, .recommendations li {
+    background: #e6f7ff;
+    border-radius: 4px;
+    margin: 0.5em 0;
+    padding: 0.5em;
+}
+
+.nutri-card {
+    display: flex;
+    align-items: center;
+}
+
+.nutri-card img {
+    border-radius: 50%;
+    margin-right: 1em;
+}
+
+.nutri-details {
+    line-height: 1.6;
+}
+
+aside {
+    flex: 1;
+    background: #f9f9f9;
+    border-left: 4px solid #1e90ff;
+    border-radius: 8px;
+    padding: 1em;
+    position: sticky;
+    top: 20px;
+}
+
+aside h2 {
+    color: #1e90ff;
+    margin-top: 0;
+}
+
+.user-info {
+    text-align: center;
+}
+
+.user-info img {
+    border-radius: 50%;
+    margin-bottom: 1em;
+}
+
+.user-details {
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #1e90ff;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        width: 100%;
+        padding: 1em;
+    }
+
+    main section {
+        width: 100%;
+        margin: 0.5em 0;
+    }
+
+    aside {
+        width: 100%;
+        border-left: none;
+        border-top: 4px solid #1e90ff;
+    }
+}

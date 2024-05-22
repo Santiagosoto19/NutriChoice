@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="/Estilos/contacto.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar_container">
+            <h4>NutriChoice</h4>
+            <div class="navbar_items">
+                <a href="../../Index.html">Inicio</a>
+                <a href="dietas.html">Dietas</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <div class="navbar_buttons">
+                <button class="button" onclick="location.href='resgistro.html'" type="button">
+                  Regístrate
+                </button>
+                <button class="button" onclick="location.href='login.html'" type="button">
+                  Iniciar Sesión
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="contact-form">
+            <h2>Envíanos un Mensaje</h2>
+            <form action="#" method="POST">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="text" name="apellidos" placeholder="Apellidos" required>
+                <input type="email" name="email" placeholder="Correo Electrónico" required>
+                <textarea name="mensaje" placeholder="Mensaje" rows="5" required></textarea>
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </div>
+        <div class="contact-info">
+            <h2>Información de Contacto</h2>
+            <div class="contact-item">
+                <img src="../Source/img/phone-fill.png" alt="Teléfono"> Telefono
+                <p>Teléfono: +1234567890</p>
+            </div>
+            <div class="contact-item">
+                <img src="../Source/img/mail-fill.png" alt="Correo electrónico">Email
+                <p>Email: info@tuempresa.com</p>
+            </div>
+            <div class="contact-item">
+                <img src="../Source/img/map-pin-2-fill.png" alt="Dirección"> Direccion 
+                <p>Dirección: Calle Principal, Ciudad, País</p>
+            </div>
+            <!-- Agrega más información de contacto si es necesario -->
+        </div>
+    </div>
+</body>
+</html>
